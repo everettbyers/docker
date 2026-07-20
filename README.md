@@ -1,2 +1,2 @@
 # docker
-docker compose files for easy deployment and or reolication 
+docker compose files for easy deployment and or replication.
