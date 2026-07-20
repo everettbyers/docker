@@ -1,0 +1,101 @@
+# --------------------------------------------------
+# Environment files
+# --------------------------------------------------
+
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Allow sanitized examples
+!.env.example
+!**/.env.example
+!*.example
+!**/*.example
+
+# --------------------------------------------------
+# Secrets and credentials
+# --------------------------------------------------
+
+**/secrets/*
+!**/secrets/**/*.example
+!**/secrets/.gitkeep
+
+**/*_token.txt
+**/*-token.txt
+**/credentials.json
+**/auth.json
+**/.htpasswd
+**/htpasswd
+
+# Allow sanitized secret templates
+!**/*_token.txt.example
+!**/*-token.txt.example
+!**/credentials.json.example
+!**/auth.json.example
+!**/htpasswd.example
+
+# --------------------------------------------------
+# Keys and certificates
+# --------------------------------------------------
+
+**/*.key
+**/*.pem
+**/*.p12
+**/*.pfx
+**/*.crt
+**/*.cer
+
+# Allow certificate examples when needed
+!**/*.key.example
+!**/*.pem.example
+!**/*.crt.example
+
+# --------------------------------------------------
+# Docker runtime and generated files
+# --------------------------------------------------
+
+**/acme.json
+**/acme-*.json
+**/acme*.json
+
+**/*.db
+**/*.db-shm
+**/*.db-wal
+**/*.sqlite
+**/*.sqlite3
+
+**/*.log
+**/logs/
+
+# --------------------------------------------------
+# Local Compose overrides
+# --------------------------------------------------
+
+**/compose.override.yml
+**/docker-compose.override.yml
+
+# --------------------------------------------------
+# Backups and temporary files
+# --------------------------------------------------
+
+**/*.bak
+**/*.backup
+**/*.old
+**/*.orig
+**/*.save
+**/*.swp
+**/*.swo
+**/*~
+
+**/tmp/
+**/temp/
+
+# --------------------------------------------------
+# Editor and operating-system files
+# --------------------------------------------------
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
